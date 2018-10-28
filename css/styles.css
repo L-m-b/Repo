@@ -52,3 +52,7 @@ a {
 h3 {
 	color: #d5000d;
 }
+
+a.back {
+	color: #303030!important;
+}

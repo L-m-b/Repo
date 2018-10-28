@@ -1,0 +1,12 @@
+//META{"name":"Custom V2","description":"2nd simple theme for beginners and lazy people.","author":"SleekZ","version":"2"}*//
+@import url(https://rawgit.com/SleekZ/customthemesleekz/master/Discord/V1/V1-External.css);
+
+:root{
+	--transparency-val: 0.3;	
+	--emoji-menu: #222;
+	--hover-color: #555;
+	--selection-color: #aaa;
+	--unread-color: #222;
+	--mention-color: #f00;
+    --background-image: url(https://example.com/example.png);
+}
