@@ -34,7 +34,7 @@ h2.subtitle {
     margin: 0 auto;
 }
 
-/*  CSS and JS color */
+/*  Header 2 */
 h2 {
     margin-bottom: 8px;
     font-size: 22px;
@@ -42,13 +42,13 @@ h2 {
     color: #303030;
 }
 
-/* change font color and remove text decoration for links */
+/* link modifications */
 a {
 	text-decoration: none;
 	color: #d5000d;
 }
 
-/* none yet area */
+/* Header 3 */
 h3 {
 	color: #d5000d;
 }
