@@ -56,3 +56,10 @@ h3 {
 a.back {
 	color: #303030!important;
 }
+
+/* footer */
+footer {
+	position: absolute;
+	bottom: 0;
+	color: #303030;
+}
