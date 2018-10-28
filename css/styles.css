@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Chivo:900");
+
+/* body stuff */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #6d6d6d;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    background: #e7e7e7 url(..\assets\body-bg.png) 0 0 repeat;
+}
+
+/* title font customization etc */
+h1.title {
+    font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #303030;
+    letter-spacing: -1px;
+    text-shadow: 3px 3px 2px rgb(125, 125, 125);
+}
+/* subtitle */
+h2.subtitle {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #aaa;
+    letter-spacing: -1px;
+}
+/* moves the content */
+.inner {
+	width: 620px;
+    margin: 0 auto;
+}
+
+/*  CSS and JS color */
+h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #303030;
+}
+
+/* change font color and remove text decoration for links */
+a {
+	text-decoration: none;
+	color: #d5000d;
+}
+
+/* none yet area */
+h3 {
+	color: #d5000d;
+}
