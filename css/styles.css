@@ -60,9 +60,13 @@ a.back {
 /* footer */
 footer {
 	position: absolute;
-	bottom: 0;
-	color: #303030;
+	bottom: 15px;
+	color: #505050;
 	width: inherit;
+}
+
+a.footer-text {
+    font-size: 1em;
 }
 
 .footer-text {
