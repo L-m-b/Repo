@@ -62,4 +62,9 @@ footer {
 	position: absolute;
 	bottom: 0;
 	color: #303030;
+	width: inherit;
+}
+
+.footer-text {
+    font-size: 1.25em;
 }
