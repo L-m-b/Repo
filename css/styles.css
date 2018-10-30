@@ -7,7 +7,7 @@ body {
     line-height: 1.5;
     color: #6d6d6d;
     text-shadow: 0 1px 0 rgba(255,255,255,0.8);
-    background: #c7c7c7 url(..\assets\body-bg.png) 0 0 repeat;
+    background: #000 url(..\assets\body-bg.png) 0 0 repeat;
 }
 
 /* title font customization etc */
@@ -43,13 +43,13 @@ h2 {
 }
 
 /* link modifications */
-a {
+a. {
 	text-decoration: none;
 	color: #d5000d;
 }
 
-/* Header 3 */
-h3 {
+/* Downloads */
+h3.downloads  {
 	color: #d5000d;
 }
 
