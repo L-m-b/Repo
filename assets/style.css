@@ -1,0 +1,229 @@
+/* page header */
+.title-head {
+	width: 100%;
+	background: #555;
+	top: 0;
+	position: absolute;
+	min-width: 380px;
+}
+
+.title {
+    font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #303030;
+    letter-spacing: -1px;
+    text-shadow: 3px 3px 2px rgb(125, 125, 125);
+	margin-left: 20px;
+}
+
+.right {
+	position: absolute;
+	margin-top: 3px;
+	right: 15px;
+	margin-left: 275px;
+	display: flex;
+}
+
+img {
+	margin-top: 5px;
+	width: 30px;
+}
+
+.nav {
+	margin-left: 60px;
+}
+
+/* inner */
+.header-inner {
+	width: inherit;
+	position: absolute;
+	background: linear-gradient(#555, #777);
+	margin-top: 45px;
+}
+
+.title-inner {
+    margin-bottom: 8px;
+	margin-left: 40px;
+}
+
+/* link modifications */
+a {
+	text-decoration: none;
+    color: #303030;
+	background: transparent;
+	margin-right: 10px;
+	cursor: pointer;
+	border: none;
+	font-weight: 600;
+	border-radius: 2px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #303030;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+#info, #css, #js {
+	animation: all 1s ease-in-out;
+	border-radius: 0;
+	border: #777 solid 0;
+}
+
+.sel {
+	border-radius: 5px!important;
+	border: #999 solid 2px!important;
+}
+
+/* sizing */
+.container, html, body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    top: 25px;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+}
+
+#page {
+	margin-top: 75px;
+	position: absolute;
+	height: 90%;
+	width: 100%;
+	border: none;
+	right: 0;
+
+	-webkit-transition: right 0.75s ease-in-out;
+	-moz-transition: right 0.75s ease-in-out;
+	-ms-transition: right 0.75s ease-in-out;
+	-o-transition: right 0.75s ease-in-out;
+	transition: right 0.75s ease-in-out;
+}
+
+
+#page.two {
+	right: 100%;
+}
+
+#page.three {
+	right: 200%
+}
+
+.page-item:first-child {
+	left: 0;
+}
+
+.page-item:nth-child(2) {
+	left: 100%;
+}
+
+.page-item:last-child {
+	left: 200%
+}
+
+.page-item {
+	position: absolute;
+	width: 100%;
+}
+
+h1, h2, h3, p {
+	margin-left: 5px;
+}
+
+hr {
+	width: 95%;
+}
+
+/* scrollers */
+.scroll {
+	overflow-y: auto;
+}
+
+.scroll::-webkit-scrollbar {
+	width: 8px;
+	background: #333;
+	border-radius: 2px;
+}
+	
+.scroll::-webkit-scrollbar-thumb {
+	width: 6px;
+	background: #777;
+	border-radius: 2px;
+}
+
+/* text */
+h1 {
+	font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #303030;
+    letter-spacing: -1px;
+    text-shadow: 3px 3px 2px rgb(125, 125, 125);
+}
+
+h2 {
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #303030;
+}
+
+h3 {
+	color: #505050;
+    font-size: 18px;
+    font-weight: bold;
+    color: #303030;
+}
+
+p {
+	width: 95%;
+	height: auto;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.site-text {
+	font-weight: normal;
+}
+
+body {
+	display: inline-block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #6d6d6d;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    background: #000 url(body-bg.png) 0 0 repeat;
+	overflow: hidden;
+	margin: 0;
+}
+
+h3.site-text {
+    font-weight: normal;
+	font-size: 20px;
+}
+
+p {
+	width: 95%;
+	height: auto;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+p.site-text {
+	font-weight: normal;
+}
+
+a.download {
+	font-size: 16px;
+}
+
+/* positioning */
+.footer {
+	bottom: 0;
+}
