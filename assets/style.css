@@ -96,6 +96,7 @@ a {
 	width: 100%;
 	border: none;
 	right: 0;
+	overflow: hidden;
 
 	-webkit-transition: right 0.75s ease-in-out;
 	-moz-transition: right 0.75s ease-in-out;
