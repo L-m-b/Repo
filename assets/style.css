@@ -1,10 +1,9 @@
 /* page header */
 .title-head {
 	width: 100%;
-	background: #555;
+	background: #004586;
 	top: 0;
 	position: absolute;
-	min-width: 380px;
 }
 
 .title {
@@ -12,9 +11,9 @@
     font-size: 38px;
     font-weight: 900;
     line-height: 1.2;
-    color: #303030;
+    color: #111;
     letter-spacing: -1px;
-    text-shadow: 3px 3px 2px rgb(125, 125, 125);
+    text-shadow: 2px 2px #777;
 	margin-left: 20px;
 }
 
@@ -27,8 +26,8 @@
 }
 
 img {
-	margin-top: 5px;
-	width: 30px;
+	margin-top: 12.5px;
+	width: 20px;
 }
 
 .nav {
@@ -39,7 +38,7 @@ img {
 .header-inner {
 	width: inherit;
 	position: absolute;
-	background: linear-gradient(#555, #777);
+	background: linear-gradient(#004586, #555);
 	margin-top: 45px;
 }
 
@@ -96,33 +95,10 @@ a {
 	width: 100%;
 	border: none;
 	right: 0;
-
-	-webkit-transition: right 0.75s ease-in-out;
-	-moz-transition: right 0.75s ease-in-out;
-	-ms-transition: right 0.75s ease-in-out;
-	-o-transition: right 0.75s ease-in-out;
-	transition: right 0.75s ease-in-out;
 }
 
-
-#page.two {
-	right: 100%;
-}
-
-#page.three {
-	right: 200%
-}
-
-.page-item:first-child {
-	left: 0;
-}
-
-.page-item:nth-child(2) {
-	left: 100%;
-}
-
-.page-item:last-child {
-	left: 200%
+.hidden {
+	display: none;
 }
 
 .page-item {
@@ -221,6 +197,11 @@ p.site-text {
 
 a.download {
 	font-size: 16px;
+	margin-left: 20px;
+}
+
+.center-text {
+	text-align: center;
 }
 
 /* positioning */
