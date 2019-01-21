@@ -1,0 +1,8 @@
+//META{"name":"SmoothCustom","description":"flexible yet simple theme, with smoothed out corners, and more features to come","website":"https://sleekz.github.io/","source":"https://github.com/sleekz/Themes/Discord/Main","author":"SleekZ","version":"1"}*//
+@import url(https://sleekz.github.io/Themes/Discord/Main/src/Import.css);
+#app-mount {
+    --main-BG: #555;
+    --opacity-Val: .75;
+    --opacity-Tone: 30,30,30;
+    --Font-Name: Arial;
+}

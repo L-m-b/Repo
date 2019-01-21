@@ -1,0 +1,6 @@
+//META{"name":"Discord Transparency","description":"Transparency theme, kept up to date along with Smooth Custom","author":"SleekZ","website":"https://sleekz.github.io/","source":"https://github.com/sleekz/Themes/Discord/Main","version":"1"}*//
+@import url(https://sleekz.github.io/Themes/Discord/Main/src/T-Import.css);
+#app-mount {
+    --opacity-Val: .75;
+    --opacity-Tone: 30,30,30;
+}

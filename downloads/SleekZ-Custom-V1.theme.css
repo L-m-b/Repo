@@ -1,9 +1,0 @@
-//META{"name":"custom V1","description":"Simple theme for beginners and lazy people.","author":"SleekZ","version":"1"} 
-@import url(https://rawgit.com/SleekZ/customthemesleekz/master/Discord/V1/V1-External.css);
-
-:root {
---background-image: url(https://example.com/example.png);
---main-color: #ccc;
---emoji-menu: #777;
---transparency-val: 0.3;
-}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" class="home-bg"><head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#00559a">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"><meta name="theme-color" content="#00559a">
   
   <title>Info | sleekz.github.io</title>
 
@@ -11,40 +11,47 @@
 </head>
 <body>
   <div class="container">
-    <div class="head">
-      <span class="title-head"><a class="title">SleekZ's repo</a></span><div class="right"><a href="https://discord.gg/Pudfzb8"><img src="assets/logo/discord.png"></a><a href="https://twitch.tv/sleekzgames"><img src="assets/logo/twitch.png"></a><a href="https://www.youtube.com/channel/UCYnzkj63Kg-uTxtWvzspjtg"><img src="assets/logo/youtube.png"></a><a href="https://twitter.com/TheSleekZ"><img src="assets/logo/twitter.png"></a><a href="https://github.com/sleekz"><img src="assets/logo/git.png"></a></div>
+    <div class="header-mount">
+      <span class="title-mount"><div class="title bold center-text">Sleek's Repos</div></span>
+      <div class="navigation-mount">
+        <span class="nav"><a id="info" class="sel" onclick="infoButton()">Info</a><a id="css" onclick="cssButton()">Css</a><a id="js" onclick="jsButton()"> Js </a></span>
+      </div>
     </div>
-    <div class="header-inner">
-      <span class="nav"><a id="info" class="sel" onclick="infoButton()">Info</a><a id="css" onclick="cssButton()">Css</a><a id="js" onclick="jsButton()"> Js </a></span>
-    </div>
-    <div id="page">
+    <div id="page" class="scroll">
       <div id="p1" class="page-item">
-        <h2 class="site-text center-text">Before you do anything, have a read.</h2>
-        <hr>
-        <h2 class="center-text">News</h3>
-        <p class="center-text">My current themes may become deprecated over the next few months, if you need some more info, contact me on discord (LukeBilston#3716)</p>
-        <hr>
+        <h2 class="bold">Before you do anything, have a read.</h2>
+        <img class="divider">
+        <h2>News</h3>
+        <p>My current themes may become deprecated over the next few months, new ones are coming soon.</p>
+        <p>(Contact me over discord for more info, if need be)</p>
+        <img class="divider">
       </div>
       <div id="p2" class="page-item hidden">
-        <h2 class="center-text">Themes</h2>
-        <hr>
-        <h3 class="center-text">Discord</h3>
-        <p><a class="download" download="" href="downloads/SleekZ-Custom-V2.theme.css">Download V2</a></p>
-        <p><a class="download" download="" href="downloads/SleekZ-Custom-V1.theme.css">Download V1</a></p>
-        <hr>
-        <h3 class="center-text">Youtube</h3>
-        <p><a class="download" download="" href="downloads/YT-custom-theme.css">Download V1</a></p>
-        <hr>
-        <h3 class="center-text">D2L</h3>
-        <p><a class="download" download="" href="downloads/d2l-custom-theme.css">Download V1</a></p>
-        <p class="footer"></p>
+        <h2>Themes</h2>
+        <img class="divider">
+        <h3>Discord</h3>
+        <a style="margin-left: 10px;"  class="download" download="" href="downloads/Smooth-Discord.theme.css">Smooth Discord</a><a style="margin-left: 10px;" class="download" download="" href="downloads/Discord-Transparency.theme.css">Discord Transparency</a>
+        <img class="divider">
+        <h3>Youtube</h3>
+        <p><a class="download" download="" href="downloads/YT-custom-theme.css">Customisable YouTube</a></p>
+        <img>
+        <h3>D2L</h3>
+        <p><a class="download" download="" href="downloads/d2l-Revised-theme.css">D2L Revised</a></p>
       </div>
       <div id="p3" class="page-item hidden">
-        <h2 class="site-text center-text">Plugins</h2>
-        <hr>
-        <p class="center-text">I will make some plugins in the future, once i've had some more experience, but for the moment you would likely only be here for themes.</p>
-        <p class="center-text">And in that case you should head to the css tab.</p>
+        <h2 class="center-text">Plugins</h2>
+        <img class="divider">
+        <p class="center-text">Plugins coming soon...</p>
       </div>
+    </div>
+    <div class="footer-mount center-text">
+      <div class="foot">Contact me on discord (LukeBilston#3716)</div>
+      <span class="right">
+        <a href="https://discord.gg/Pudfzb8"><img src="assets/logo/discord.png"></a>
+        <a href="https://twitch.tv/sleekzgames"><img src="assets/logo/twitch.png"></a>
+        <a href="https://www.youtube.com/channel/UCYnzkj63Kg-uTxtWvzspjtg"><img src="assets/logo/youtube.png"></a>
+        <a href="https://twitter.com/TheSleekZ"><img src="assets/logo/twitter.png"></a>
+        <a href="https://github.com/sleekz"><img src="assets/logo/git.png"></a></span>
     </div>
   </div>
 
