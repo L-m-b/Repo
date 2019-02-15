@@ -1,191 +1,133 @@
-/* Mount */
+/* mount */
 body {
-	display: inline-block;
-	height: 100%;
-    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 1em;
-    line-height: 2;
-    color: #777;
-    background: #333;
-	overflow: hidden;
-	margin: 0;
-}
-
-/* Header */
-.header-mount {
-	width: 100%;
-}
-
-.title-mount {
-	width: 100%;
-	background: linear-gradient(#00268f, 75%, #333);
-	top: 0;
 	position: absolute;
+	margin: unset;
+	height: 100vh;
+	width: 100vw;
+	color: #333;
+	font-family: Helvetica, sans-serif;
+	overflow: hidden;
 }
 
-.title {
-    font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 38px;
-    line-height: 1.2;
-	letter-spacing: -1px;
+/* header */
+#Title {
 	width: auto;
-	overflow: hidden;
+	height: 60px;
+	background: #333;
+	font-weight: 900;
 }
 
-@media screen and (max-width: 700px) {
-	.title {margin-left: 200px;}
-}
-
-.navigation-mount {
-	position: absolute;
-	margin-top: 5px;
-}
-
-.nav {
-	margin-left: 35px;
-}
-
-.nav a, .sel {
-	margin-right: 10px;
-	cursor: pointer;
-    font-size: 24px;
-}
-
-.sel {
-	border-radius: 5px!important;
-	border: #777 solid 2px!important;
-}
-
-/* Footer */
-.right {
-	position: absolute;
-	margin-top: 3px;
-	right: 15px;
-	margin-left: 275px;
-	display: flex;
-}
-
-.footer-mount img {
-	margin-top: 12.5px;
-	width: 20px;
-	bottom: 10px;
+#Title .text {
 	position: relative;
+	left: 15px;
+	color: #999;
+	font-size: 40px;
+	letter-spacing: -2px;
 }
 
-.footer-mount a {
-	margin-right: 5px;
-}
-
-.foot {
-	height: inherit;
-	width: 100%;
+#Nav {
 	position: absolute;
-
+    right: 15px;
+    height: 60px;
 }
 
-@media screen and (max-width: 700px) {
-	.foot {
-		text-align: left;
-		margin-left: 22.5px;
-	}
+#Nav a {
+	display: inline-block;
+	position: relative;
+	top: 15px;
+	width: 50px;
+	height: 30px;
+	margin-left: 5px;
+	background: #444;
+	color: #999;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 5px;
 }
 
-.footer-mount {
-	bottom: 0;
+#Nav .sel {
+	background: #999;
+	color: #333;
+}
+
+/* content */
+section, main {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #999;
+}
+
+/* footer */
+#Footer {
+	position: absolute;
+	bottom: 0px;
+	background: #333;
+	color: #999;
 	height: 30px;
 	width: 100%;
-	position: absolute;
-	background: linear-gradient(#555, #000);
 }
 
-
-
-/* link modifications */
-#page a {
-	color: #5398d8;
-	text-decoration: none;
-	cursor: pointer;
+#Footer span {
+	font-size: 25px;
 }
 
-/* sizing */
-.container, body {
-	position: absolute;
-	height: 100%;
-    width: 100%;
+.links {
+	position: relative;
+	width: 120px;
+	float: right;
 }
 
-#page {
-	margin-top: 45px;
-	margin-bottom: 30px;
-	position: absolute;
-	height: calc(100% - 75px);
-	width: 100%;
-	border: none;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+section .links a {
+	margin: unset;
 }
 
-.hidden {
-	display: none;
-	height: 0;
+.links img {
+	margin-top: 2.5px;
+	width: 25px;
 }
 
-.page-item {
-	position: absolute;
-	width: 100%;
-}
-
-/* Text */
-.bold {
-	font-weight: bold;
-}
-
-.center-text {
-	text-align: center;
-}
-
+/* text */
 h1 {
-	font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 38px;
-    line-height: 1.2;
-    letter-spacing: -1px;
+	font-size: 30px;
+	font-weight: 800;
+	max-width: calc(100% - 10px);
+	white-space: normal;
+	margin: 0 5px;
 }
 
 h2 {
-    margin-bottom: 4px;
-    font-size: 24px;
+	font-size: 25px;
+	font-weight: 700;
+	max-width: calc(100% - 20px);
+	white-space: normal;
+	margin: 0 10px;	
 }
 
-h3 {
-    font-size: 18px;
+h3, p {
+	font-size: 17.5px;
+	font-weight: 700;
+	max-width: calc(100% - 40px);
+	white-space: normal;
+	margin: 0 20px;
 }
 
-h4 {
-	font-size: 16px;
+/* divider */
+hr {
+	border-color: #aaa;
+	margin: 0 20px;
 }
 
-p {
-	height: auto;
-	font-size: 16px;
+/* links */
+a {
+	text-decoration: none;
 }
 
-/* scrollers */
-.scroll {
-	overflow-y: auto;
+section a {
+	max-width: calc(100% - 40px);
+	margin: 0 0 0 20px;
 }
 
-.scroll::-webkit-scrollbar {
-	width: 0;
-	background: #333;
-}
-
-.scroll::hover::-webkit-scrollbar {
-	width: 10px;
-}
-
-.scroll::-webkit-scrollbar-thumb {
-	width: 10px;
-	background: #777;
+a:visited {
+	color: #0000EE;
 }

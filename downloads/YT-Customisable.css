@@ -1,8 +1,7 @@
 @import url(https://sleekz.github.io/customthemesleekz/ytthemecss/Youtubeimportcss.css);
 :root {
-    /* customiseable values */
     --main-color: #999;
     --transparency-val: 0.35;
     --background-image: url(https://example.com/example.png);
 }
-/* make sure to use youtube on dark mode */
+/* Use youtube on dark mode */

@@ -1,59 +1,121 @@
 <!DOCTYPE html>
-<html lang="en-us" class="home-bg"><head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"><meta name="theme-color" content="#00559a">
+<html lang="en-us">
   
-  <title>Info | sleekz.github.io</title>
+    <head>
 
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/font.css">
-  <link rel="shortcut icon" href="assets/ico.png">
-  <script src="assets/animation.js"></script>
-</head>
-<body>
-  <div class="container">
-    <div class="header-mount">
-      <span class="title-mount"><div class="title bold center-text">Sleek's Repos</div></span>
-      <div class="navigation-mount">
-        <span class="nav"><a id="info" class="sel" onclick="infoButton()">Info</a><a id="css" onclick="cssButton()">Css</a><a id="js" onclick="jsButton()"> Js </a></span>
-      </div>
-    </div>
-    <div id="page" class="scroll">
-      <div id="p1" class="page-item">
-        <h2 class="bold">Before you do anything, have a read.</h2>
-        <img class="divider">
-        <h2>News</h3>
-        <p>My current themes may become deprecated over the next few months, new ones are coming soon.</p>
-        <p>(Contact me over discord for more info, if need be)</p>
-        <img class="divider">
-      </div>
-      <div id="p2" class="page-item hidden">
-        <h2>Themes</h2>
-        <img class="divider">
-        <h3>Discord</h3>
-        <a style="margin-left: 10px;"  class="download" download="" href="downloads/Smooth-Discord.theme.css">Smooth Discord</a><a style="margin-left: 10px;" class="download" download="" href="downloads/Discord-Transparency.theme.css">Discord Transparency</a>
-        <img class="divider">
-        <h3>Youtube</h3>
-        <p><a class="download" download="" href="downloads/YT-custom-theme.css">Customisable YouTube</a></p>
-        <img>
-        <h3>D2L</h3>
-        <p><a class="download" download="" href="downloads/d2l-Revised-theme.css">D2L Revised</a></p>
-      </div>
-      <div id="p3" class="page-item hidden">
-        <h2 class="center-text">Plugins</h2>
-        <img class="divider">
-        <p class="center-text">Plugins coming soon...</p>
-      </div>
-    </div>
-    <div class="footer-mount center-text">
-      <div class="foot">Contact me on discord (LukeBilston#3716)</div>
-      <span class="right">
-        <a href="https://discord.gg/Pudfzb8"><img src="assets/logo/discord.png"></a>
-        <a href="https://twitch.tv/sleekzgames"><img src="assets/logo/twitch.png"></a>
-        <a href="https://www.youtube.com/channel/UCYnzkj63Kg-uTxtWvzspjtg"><img src="assets/logo/youtube.png"></a>
-        <a href="https://twitter.com/TheSleekZ"><img src="assets/logo/twitter.png"></a>
-        <a href="https://github.com/sleekz"><img src="assets/logo/git.png"></a></span>
-    </div>
-  </div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#555">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="shortcut icon" href="assets/ico.png">
+        <script src="assets/script.js"></script>
+  
+    </head>
 
-</body>
+    <body onload="hashFunction()">
+
+        <main>
+
+            <div id="Title">
+                <span class="text">Luke's Repo</span>
+                <span id="Nav">
+                    <a class="sel" href="#Information">Info</a>
+                    <a href="#Themes">Css</a>
+                    <a href="#Plugins">Js</a>
+                </span>
+            </div>
+        
+            <h1 class="info-header">Information</h1>
+            <hr>
+            <h2 class="news">News</h2>
+            <p>I'm making my site better, Updating and replacing themes and slowly learning javascript.</p>
+                        
+            <div id="Footer">
+                  
+                <span>Contact me:</span>
+                <div class="links">
+                            
+                    <a href="https://github.com/SleekZ/"><img src="assets/logo/git.png"></a>
+                    <a href="https://discordapp.com/invite/vB8jzBy"><img src="assets/logo/discord.png"></a>
+                    <a href="https://twitch.tv/sleekzgames"><img src="assets/logo/twitch.png"></a>
+                    <a href="https://twitter.com/TheSleekZ"><img src="assets/logo/twitter.png"></a>
+                    
+                </div>
+            </div>
+        
+        </main>
+
+        <template id="Information">
+
+            <div id="Title">
+                <span class="text">Luke's Repo</span>
+                <span id="Nav">
+                    <a class="sel" href="#Information">Info</a>
+                    <a href="#Themes">Css</a>
+                    <a href="#Plugins">Js</a>
+                </span>
+            </div>
+
+            <h1 class="info-header">Information</h1>
+            <hr>
+            <h2 class="news">News</h2>
+            <p>I'm making my site better, Updating and replacing themes and slowly learning javascript.</p>
+                
+            <div id="Footer">
+          
+                <span>Contact me:</span>
+                <div class="links">
+                    
+                        <a href="https://github.com/SleekZ/"><img src="assets/logo/git.png"></a>
+                        <a href="https://discordapp.com/invite/vB8jzBy"><img src="assets/logo/discord.png"></a>
+                        <a href="https://twitch.tv/sleekzgames"><img src="assets/logo/twitch.png"></a>
+                        <a href="https://twitter.com/TheSleekZ"><img src="assets/logo/twitter.png"></a>
+            
+                </div>
+            </div>
+
+        </template>
+        <template id="Themes">
+
+            <div id="Title">
+                <span class="text">Luke's Repo</span>
+                <span id="Nav">
+                    <a href="#Information">Info</a>
+                    <a class="sel" href="#Themes">Css</a>
+                    <a href="#Plugins">Js</a>
+                </span>
+            </div>
+
+            <h1 class="Theme-header">Themes</h1>
+            <hr>
+            <h2 class="themes-BD">Discord</h2>
+            <a download href="downloads/Smooth-Discord.theme.css">Smooth Discord</a><a download href="downloads/Discord-Transparency.theme.css">Transparency</a>
+            <hr>
+            <h2 class="themes-YT">Youtube</h2>
+            <a download href="downloads/YT-Customisable.css">Youtube Customisable</a>
+            <hr>
+            <h2 class="themes-D2L">D2l</h2>
+            <a download href="downloads/D2l-Redesigned.css">D2L Redesigned</a>
+
+        </template>
+
+        <template id="Plugins">
+
+            <div id="Title">
+                <span class="text">Luke's Repo</span>
+                <span id="Nav">
+                    <a href="#Information">Info</a>
+                    <a href="#Themes">Css</a>
+                    <a class="sel" href="#Plugins">Js</a>
+                </span>
+            </div>
+
+            <h1>Plugins</h1>
+            <hr>
+            <h2>Nothing here yet...</h2>
+    
+        </template>
+
+    </body>
+
 </html>
