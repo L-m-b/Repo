@@ -32,9 +32,3 @@ function showPage(hash) {
 }
 
 showPage(window.location.hash);
-
-function waitForDocumentComplete () {
-    document.readyState === 'complete' ? init() : setTimeout(waitForDocumentComplete, 50);
-}
-
-waitForDocumentComplete();
