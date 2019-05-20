@@ -1,34 +1,52 @@
-// credit to qwerasd for the scripts,
-// that i made some small modifications to
+// credit to qwerasd for the scripts, that i've been making modifications to
 
-window.addEventListener('load', hashFunction);
-window.addEventListener('hashchange', hashFunction);
+window.addEventListener('load', pageFunction);
+window.addEventListener('hashchange', pageFunction);
 
-function hashFunction() {
-    showPage(window.location.hash);
+function pageFunction() {
+    const openPage = document.getElementById('active-page');
+    if (openPage) {
+        openPage.remove();
+    };
+    if (window.location.hash) {
+        showPage(window.location.hash);
+    }
+    else {
+        window.location.hash = "Information"
+    }
+    clearModals()
 }
 
 function showPage(hash) {
-    if (hash) {
-        document.title = hash.slice(1) + " | sleekz.github.io";
-        const page = document.getElementById(hash.slice(1));
-        const openPage = document.getElementById('active-page');
-        if (page) {
-            const clone = document.createElement('section');
-            clone.appendChild(document.importNode(page.content, true));
-            clone.id = 'active-page';
+    document.title = hash.slice(1) + " | sleekz.github.io";
+    const page = document.getElementById(hash.slice(1));
+    if (page) {
+        const clone = document.createElement('section');
+        clone.appendChild(document.importNode(page.content, true));
+        clone.id = 'active-page';
 
-            document.body.appendChild(clone);
-
-        }
-        if (openPage) {
-            openPage.remove();
-        }
-        window.scrollTo(0, 0);
+        document.body.appendChild(clone);
     }
-    else {
-        document.title = "Information | sleekz.github.io";
+    window.scrollTo(0, 0);
+};
+
+function modalFunction(modalID) {
+    const modal = document.getElementById(modalID)
+    if (modal) {
+        const showModal = document.createElement('section');
+        const innerModal = document.createElement('div');
+        showModal.appendChild(innerModal);
+        innerModal.appendChild(document.importNode(modal.content, true))
+        showModal.id = 'active-modal';
+        innerModal.className = 'modal-content'
+
+        document.body.appendChild(showModal);
     }
 }
 
-showPage(window.location.hash);
+function clearModals() {
+    const openModal = document.getElementById('active-modal')
+    if (openModal) {
+        openModal.remove();
+    }
+}
