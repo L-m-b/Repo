@@ -14,7 +14,7 @@ var twitch = "https://www.twitch.tv/lukebilston"
 
 function redirLink(hash) {
     if (hash) {
-        var link = hash.slice(1);
+        var link = window.(hash.slice(1));
         if (link) {
             console.log = link
         }
