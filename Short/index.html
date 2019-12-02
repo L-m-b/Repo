@@ -3,18 +3,15 @@
 <body style="background: black;">
 <script>
 
-function redirFunc() {
-    redirLink(window.location.hash);
-}
-window.addEventListener('load', redirFunc);
-window.addEventListener('hashchange', redirFunc);
+window.addEventListener('load', redirLink(window.location.hash));
+window.addEventListener('hashchange', redirLink(window.location.hash));
 // links
 var youtube = "https://www.youtube.com/channel/UCmylu8EY5Dm00fMI6DDVzLQ"
 var twitch = "https://www.twitch.tv/lukebilston"
 
 function redirLink(hash) {
     if (hash) {
-        var link = window.(hash.slice(1));
+        var link = window.location.hash.slice(1);
         if (link) {
             console.log = link
         }
