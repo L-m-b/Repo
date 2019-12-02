@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<body>
+<body style="background: black;">
 <script>
 window.addEventListener('load', redirFunc);
+window.addEventListener('hashchange', redirFunc);
 
 function redirFunc() {
     redirLink(window.location.hash);
