@@ -11,7 +11,7 @@ var youtube = "https://www.youtube.com/channel/UCmylu8EY5Dm00fMI6DDVzLQ"
 var twitch = "https://www.twitch.tv/lukebilston"
 
 function redirLink(hash) {
-    if (hash) == "youtube" {
+    if (hash.slice(1) == "youtube") {
         window.location = youtube
     }
 }
