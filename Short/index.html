@@ -7,13 +7,16 @@ window.addEventListener('load', redirFunc);
 window.addEventListener('hashchange', redirFunc);
 function redirFunc() {redirLink(window.location.hash);}
 // links
-var youtube = "https://www.youtube.com/channel/UCmylu8EY5Dm00fMI6DDVzLQ"
-var twitch = "https://www.twitch.tv/lukebilston"
-
 function redirLink(hash) {
+    if (hash.slice(1) == "twitch") {
+        window.location = "https://www.twitch.tv/lukebilston"
+    };
     if (hash.slice(1) == "youtube") {
-        window.location = youtube
-    }
+        window.location = "https://www.youtube.com/channel/UCmylu8EY5Dm00fMI6DDVzLQ"
+    };
+    if (hash.slice(1) == "discord") {
+        window.location = "https://discord.gg/Q7WjXAC"
+    };
 }
 
 </script>
