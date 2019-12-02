@@ -2,26 +2,25 @@
 <html lang="en-us">
 <body style="background: black;">
 <script>
+
 window.addEventListener('load', redirFunc);
 window.addEventListener('hashchange', redirFunc);
-
-function redirFunc() {
-    redirLink(window.location.hash);
-}
+// links
+var youtube = "https://www.youtube.com/channel/UCmylu8EY5Dm00fMI6DDVzLQ"
+var twitch = "https://www.twitch.tv/lukebilston"
 
 function redirLink(hash) {
     if (hash) {
-        // links
-        var youtube = "https://www.youtube.com/channel/UCmylu8EY5Dm00fMI6DDVzLQ"
-        
         var link = hash.slice(1);
         if (link) {
             console.log = link
         }
     }
 }
-
-redirLink(window.location.hash);
+    
+function redirFunc() {
+    redirLink(window.location.hash);
+}
 </script>
 </body>
 </html>
