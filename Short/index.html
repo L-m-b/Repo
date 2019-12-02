@@ -3,6 +3,9 @@
 <body style="background: black;">
 <script>
 
+function redirFunc() {
+    redirLink(window.location.hash);
+}
 window.addEventListener('load', redirFunc);
 window.addEventListener('hashchange', redirFunc);
 // links
@@ -17,10 +20,7 @@ function redirLink(hash) {
         }
     }
 }
-    
-function redirFunc() {
-    redirLink(window.location.hash);
-}
+
 </script>
 </body>
 </html>
