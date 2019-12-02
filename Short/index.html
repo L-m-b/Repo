@@ -12,9 +12,9 @@ var twitch = "https://www.twitch.tv/lukebilston"
 
 function redirLink(hash) {
     if (hash) {
-        var link = [window.location.hash.slice(1)];
+        var link = window.location.hash.slice(1);
         if (link) {
-            window.location = link
+            //window.location = link
         }
     }
 }
