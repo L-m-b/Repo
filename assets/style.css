@@ -24,7 +24,7 @@ html, body {
 #Title .text {
 	position: absolute;
 	left: 10px;
-	color: #999;
+	color: #ddd;
 	font-size: 40px;
 	letter-spacing: 0px;
 	margin-top: 5px;
@@ -45,14 +45,14 @@ html, body {
 	padding: 2.5px;
 	margin-left: 5px;
 	background: #444;
-	color: #999;
+	color: #ddd;
 	font-size: 20px;
 	text-align: center;
 	border-radius: 5px;
 }
 
 #Nav .sel {
-	background: #999;
+	background: #ddd;
 	color: #333;
 }
 
@@ -81,7 +81,7 @@ html, body {
 
 .modal-content {
 	background: #333;
-	color: #999;
+	color: #ddd;
 	margin: 15% auto;
 	padding: 20px;
 	border-radius: 7.5px;
@@ -90,7 +90,7 @@ html, body {
 
 #active-page button {
 	display: block;
-	background: #999;
+	background: #ddd;
 	color: #333;
 	border: solid 2px #333;
 	border-radius: 7.5px;
@@ -99,14 +99,14 @@ html, body {
 
 #active-modal button::not(.closebutton) {
 	background: #333;
-	color: #999;
+	color: #ddd;
 	border-radius: 7.5px;
 	margin: auto;
 }
 
 .closebutton {
 	position: relative;
-	color: #999;
+	color: #ddd;
 	border-radius: 7.5px;
 	float: right;
 	cursor: pointer;
@@ -117,7 +117,7 @@ html, body {
 	position: absolute;
 	bottom: 0px;
 	background: #333;
-	color: #999;
+	color: #ddd;
 	height: 30px;
 	width: 100%;
 }
