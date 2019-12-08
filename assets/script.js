@@ -18,7 +18,7 @@ function pageFunction() {
 }
 
 function showPage(hash) {
-    document.title = hash.slice(1) + " | l-m-b";
+    document.title = hash.slice(1) + " | LMB";
     const page = document.getElementById(hash.slice(1));
     if (page) {
         const clone = document.createElement('section');
