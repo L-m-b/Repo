@@ -12,13 +12,13 @@ function pageFunction() {
         showPage(window.location.hash);
     }
     else {
-        window.location.hash = "Information"
+        window.location.hash = "Info"
     }
     clearModals()
 }
 
 function showPage(hash) {
-    document.title = hash.slice(1) + " | sleekz.github.io";
+    document.title = hash.slice(1) + " | l-m-b";
     const page = document.getElementById(hash.slice(1));
     if (page) {
         const clone = document.createElement('section');
