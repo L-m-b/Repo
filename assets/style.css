@@ -17,7 +17,7 @@ html, body {
 #Title {
 	width: auto;
 	height: 60px;
-	background: #333;
+	background: #000;
 	font-weight: 900;
 }
 
@@ -53,7 +53,7 @@ html, body {
 
 #Nav .sel {
 	background: #ddd;
-	color: #333;
+	color: #000;
 }
 
 /* content */
@@ -80,7 +80,7 @@ html, body {
 }
 
 .modal-content {
-	background: #333;
+	background: #000;
 	color: #ddd;
 	margin: 15% auto;
 	padding: 20px;
@@ -116,7 +116,7 @@ html, body {
 #Footer {
 	position: absolute;
 	bottom: 0px;
-	background: #333;
+	background: #000;
 	color: #ddd;
 	height: 30px;
 	width: 100%;
