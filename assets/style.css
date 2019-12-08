@@ -44,7 +44,7 @@ html, body {
 	height: 25px;
 	padding: 2.5px;
 	margin-left: 5px;
-	background: #444;
+	background: #222;
 	color: #ddd;
 	font-size: 20px;
 	text-align: center;
@@ -53,7 +53,7 @@ html, body {
 
 #Nav .sel {
 	background: #ddd;
-	color: #000;
+	color: #222;
 }
 
 /* content */
@@ -91,14 +91,14 @@ html, body {
 #active-page button {
 	display: block;
 	background: #ddd;
-	color: #333;
-	border: solid 2px #333;
+	color: #222;
+	border: solid 2px #222;
 	border-radius: 7.5px;
 	margin: auto;
 }
 
 #active-modal button::not(.closebutton) {
-	background: #333;
+	background: #222;
 	color: #ddd;
 	border-radius: 7.5px;
 	margin: auto;
