@@ -1,5 +1,3 @@
-// credit to qwerasd for the scripts, that i've been making modifications to
-
 window.addEventListener('load', pageFunction);
 window.addEventListener('hashchange', pageFunction);
 
@@ -14,7 +12,6 @@ function pageFunction() {
     else {
         window.location.hash = "Info"
     }
-    clearModals()
 }
 
 function showPage(hash) {
@@ -30,23 +27,4 @@ function showPage(hash) {
     window.scrollTo(0, 0);
 };
 
-function modalFunction(modalID) {
-    const modal = document.getElementById(modalID)
-    if (modal) {
-        const showModal = document.createElement('section');
-        const innerModal = document.createElement('div');
-        showModal.appendChild(innerModal);
-        innerModal.appendChild(document.importNode(modal.content, true))
-        showModal.id = 'active-modal';
-        innerModal.className = 'modal-content'
 
-        document.body.appendChild(showModal);
-    }
-}
-
-function clearModals() {
-    const openModal = document.getElementById('active-modal')
-    if (openModal) {
-        openModal.remove();
-    }
-}
